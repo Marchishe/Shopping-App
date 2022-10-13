@@ -605,6 +605,12 @@ body {
   .heading_decoration::after {
     display: none;
   }
+  .product_1_poster {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+  }
   .voucher_text {
     font-family: "Poppins";
     font-style: normal;
@@ -673,6 +679,7 @@ body {
     font-size: 20px;
     line-height: 35px;
     letter-spacing: 0.03em;
+    width: 100%;
     background: var(--white);
     border: none;
     outline: none;
