@@ -81,6 +81,9 @@ body {
   flex-direction: column;
   max-width: 400px;
 }
+.product_1_poster_image {
+  max-width: 100%;
+}
 .product_name {
   font-family: "Poppins";
   font-style: normal;
@@ -130,7 +133,10 @@ body {
 .product_2_poster {
   display: flex;
   flex-direction: column;
-  width: 620px;
+  padding: 0 30px;
+}
+.product_2_poster_image {
+  max-width: 100%;
 }
 .brand {
   background: var(--main-bg-color);
@@ -627,7 +633,7 @@ body {
   .product_1_poster {
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 0 50px;
     max-width: 100%;
   }
   .voucher_text {
