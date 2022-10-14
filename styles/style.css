@@ -74,13 +74,12 @@ body {
 }
 .product_1 {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .product_1_poster {
   display: flex;
   flex-direction: column;
-  padding: 0 50px;
-  width: 440px;
+  max-width: 400px;
 }
 .product_name {
   font-family: "Poppins";
@@ -203,8 +202,8 @@ body {
 .banner_1_slogan {
   display: flex;
   flex-direction: column;
-  margin-top: 10mm;
-  margin-left: 30mm;
+  margin-top: 8vh;
+  margin-left: 20vh;
 }
 .banner_1_slogan_text {
   font-family: "Poppins";
@@ -227,8 +226,8 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -80px;
-  width: 400px;
+  left: -22vh;
+  width: 100%;
   height: 90px;
   background-image: url(../images/white_background.png);
   background-repeat: no-repeat;
@@ -250,8 +249,8 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -80px;
-  width: 400px;
+  left: -22vh;
+  width: 100%;
   height: 90px;
   background-image: url(../images/Rectangle\ 6.png);
   background-repeat: no-repeat;
@@ -538,6 +537,32 @@ body {
   .banner_1_image_lady {
     display: none;
   }
+  .banner_1_slogan_text_decoration_white::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5vh;
+    width: 100%;
+    height: 90px;
+    background-image: url(../images/white_background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+  }
+  .banner_1_slogan_text_decoration_gold::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5vh;
+    width: 100%;
+    height: 90px;
+    background-image: url(../images/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+  }
   .header_nav_list {
     display: none;
   }
@@ -570,8 +595,8 @@ body {
   .banner_1_slogan {
     display: flex;
     flex-direction: column;
-    margin-top: 10mm;
-    margin-left: 26mm;
+    margin-top: 4vh;
+    margin-left: 10vh;
   }
   .banner_1_slogan_text_decoration_white {
     font-size: 50px;
@@ -581,12 +606,6 @@ body {
   }
   .banner_1_slogan_text_decoration_gold {
     font-size: 50px;
-  }
-  .banner_1_slogan_text_decoration_white::after {
-    width: 340px;
-  }
-  .banner_1_slogan_text_decoration_gold::after {
-    width: 340px;
   }
   .btn-lg {
     padding: 12px 30px;
@@ -608,8 +627,8 @@ body {
   .product_1_poster {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
-    width: 100%;
+    padding: 0 30px;
+    max-width: 100%;
   }
   .voucher_text {
     font-family: "Poppins";
@@ -692,7 +711,7 @@ body {
     color: var(--white);
     background-color: var(--black);
     padding: 8px 20px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.03em;
   }
